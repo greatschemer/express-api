@@ -74,4 +74,4 @@ server.delete('/api/posts/:id', (req, res) => {
     res.send();
 });
 
-server.listen(9999);
+server.listen(process.env.PORT || 9999);
