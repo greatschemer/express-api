@@ -1,0 +1,34 @@
+@api=http://localhost:9999/api
+
+###
+
+GET {{api}}/posts
+
+###
+
+GET {{api}}/posts/1
+
+###
+
+POST {{api}}/posts
+Content-Type: application/json; charset=UTF-8
+
+{
+    "id": 0,
+    "title": "First Post"
+}
+
+###
+
+
+POST {{api}}/posts
+Content-Type: application/json; charset=UTF-8
+
+{
+    "id": 1,
+    "title": "First Post Updated"
+}
+
+###
+
+DELETE {{api}}/posts/1
